@@ -671,6 +671,7 @@ span {
     }
     .card-item__container {
         width: 280px;
+        padding: 15px 10px;
     }
     .menu {
         gap: 10px;
