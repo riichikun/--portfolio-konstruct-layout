@@ -439,12 +439,16 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .footer-top-input>input {
     width: 250px;
     height: 40px;
-    font-family: inherit
+    font-family: inherit;
+    padding-left: 16px;
+    opacity: 30%;
 }
 
 
@@ -460,12 +464,34 @@ span {
     position: absolute;
     left: 15px;
     top: 11px;
+    z-index: -1;
+}
+
+.footer-top-input>input {
+    color: var(--main-dark-color);
 }
 
 .footer-top-input>input:focus {
     padding-left: 16px; 
     font-family: Open Sans;
 }
+
+.footer-top-input input:not(:-moz-placeholder-shown) {
+    font-family: Open Sans;
+  }
+
+.footer-top-input input:not(:placeholder-shown) {
+    font-family: Open Sans;
+}
+
+
+.footer-top-input input:not(:-moz-placeholder-shown) ~ label {
+    color: transparent;
+  }
+
+  .footer-top-input input:not(:placeholder-shown) ~ label {
+    color: transparent;
+  }
 
 .footer-top-input>input:focus ~ label {
     color: transparent;
