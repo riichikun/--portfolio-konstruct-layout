@@ -23,6 +23,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    color: var(--extra-color);    
 }
 
 h2, h3, h4, a, p {
@@ -587,6 +588,10 @@ span {
     font-weight: 600;
     line-height: 25px;
     letter-spacing: 0.846px;
+}
+
+.links-row>a:hover {
+    color: var(--extra-color);
 }
 
 .footer-main-contacts {
