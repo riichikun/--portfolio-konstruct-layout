@@ -12,6 +12,9 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
 
 a {
     text-decoration: none;
@@ -178,6 +181,10 @@ span {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
 }
 .menu {
     max-width: 408px;
@@ -827,5 +834,11 @@ span {
     }
     .footer-icons__block {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__container {
+        position: static;
     }
 }
