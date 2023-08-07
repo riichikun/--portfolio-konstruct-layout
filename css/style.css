@@ -77,7 +77,30 @@ h3 {
 h4 {
     font-weight: 700;
     font-size: 18px;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
 }
+
+.capabilities-top-left>h4:hover ~ .small-line {
+    transform: translateX(100px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.capabilities-top-left>.small-line {
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.story-top>h4:hover ~ .small-line {
+    transform: translateX(30px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.story-top>.small-line {
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
 
 button {
     background-color: var(--extra-color);
@@ -85,6 +108,22 @@ button {
     height: 40px;  
     width: 150px;
 }
+
+button:hover {
+    background-color: #FFF;
+    color: var(--extra-color);
+}
+
+button:hover p {
+    color: var(--extra-color);
+}
+
+.footer-top-input>button:hover {
+    background-color: var(--main-dark-color);
+    border: 0.1px solid #FFF;
+    border-radius: 3px;
+}
+
 
 button>p {
     color: #FFF;
@@ -96,6 +135,7 @@ button>p {
     text-transform: uppercase;
     text-align: center;
 }
+
 
 button:hover {
     cursor: pointer;
@@ -186,6 +226,7 @@ span {
     position: sticky;
     top: 0;
     background-color: #FFF;
+    z-index: 1;
 }
 .menu {
     max-width: 408px;
@@ -341,9 +382,6 @@ span {
     justify-content: space-between;
 }
 
-.capabilities-text>button {
-}
-
 .capabilities-text>p {
     font-size: 11px;
     font-style: normal;
@@ -368,6 +406,16 @@ span {
 .card-item__container {
     padding: 38px 0 0 23px;
     width: 295px;
+}
+
+.card-item__container>img {
+    transform: rotate3d(0, 0, 0, 3.142rad);
+    transition: transform 0.7s ease-in-out;
+}
+
+.card-item__container>img:hover {
+    transform: rotate3d(0, 1, 0, 3.142rad);
+    transition: transform 0.7s ease-in-out;
 }
 
 .card-item__container>p {
